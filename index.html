@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.4.0/remixicon.css"
+      crossorigin=""
+    />
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Wilbert Lincoln</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div>
+      <!-- Theme Button -->
+      <i class="ri-moon-line change-theme" id="theme-button"></i>
+    </div>
+    <nav id="hamburger-nav">
+      <div class="logo">Wilbert Lincoln</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img class="round" src="asset/images.png" alt="" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Wilbert Lincoln</h1>
+        <p class="section__text__p2">I'm a <span class="textx"></span></p>
+        <div class="btn-container">
+          <div class="btn-animation">
+            <button
+              class="btn btn-color-2"
+              onclick="window.open('asset/CV Wilbert Lincoln.pdf')"
+            >
+              Download CV
+            </button>
+            <button
+              class="btn btn-color-1"
+              onclick="location.href='./#contact'"
+            >
+              Contact Info
+            </button>
+          </div>
+        </div>
+        <div id="socials-container">
+          <a href="https://github.com/Kingkin1102" target="_blank">
+            <i class="fa-brands fa-github fa-xl icon icon-top"></i>
+          </a>
+          <a
+            href="https://www.youtube.com/channel/UC6GLj6X6n4KtpetxsnQW80w"
+            target="_blank"
+          >
+            <i class="fa-brands fa-youtube fa-xl icon icon-top"></i>
+          </a>
+          <a href="https://www.threads.net/@wilbert_are_lincoln" target="_blank"
+            ><i class="fa-brands fa-threads fa-xl icon icon-top"></i
+          ></a>
+          <a href="https://www.tiktok.com/@pcy_bp" target="_blank"
+            ><i class="fa-brands fa-tiktok fa-xl icon icon-top"></i
+          ></a>
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1 sectiontext-a">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img src="asset/images.png" alt="" class="about-pic" />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <i class="fa-solid fa-certificate fa-xl icon"></i>
+              <h3>Experience</h3>
+              <p>4+ Months of <br />Frontend Internship</p>
+            </div>
+            <div class="details-container">
+              <i class="fa-solid fa-user-graduate fa-xl icon"></i>
+              <h3>Education</h3>
+              <p>Maitreyawira Vocational High School<br />Multimedia</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              I have about 4 months of internhsip in PT SoBatamDotCom in the
+              FrontEnd website development, and I was studying at Maitreyawira
+              since elementary school and currently in Maitreyawira vocational
+              high school multimedia major 😊
+            </p>
+          </div>
+        </div>
+      </div>
+      <i
+        class="fa-solid fa-angles-down fa-2xl fa-flip icon arrow"
+        onclick="location.href='./#experience'"
+      ></i>
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Website Development</h2>
+            <div class="article-container">
+              <article>
+                <i
+                  class="fa-solid fa-circle-check fa-xl icon"
+                  style="margin: 15px"
+                ></i>
+                <div>
+                  <h3>HTML</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <i
+                  class="fa-solid fa-circle-check fa-xl icon"
+                  style="margin: 15px"
+                ></i>
+                <div>
+                  <h3>CSS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+
+              <article>
+                <i
+                  class="fa-solid fa-circle-check fa-xl icon"
+                  style="margin: 15px"
+                ></i>
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <i
+                  class="fa-solid fa-circle-check fa-xl icon"
+                  style="margin: 15px"
+                ></i>
+                <div>
+                  <h3>Adobe XD</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <i
+                  class="fa-solid fa-circle-check fa-xl icon"
+                  style="margin: 15px"
+                ></i>
+                <div>
+                  <h3>Figma</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Another Software</h2>
+            <div class="article-container">
+              <article>
+                <i
+                  class="fa-solid fa-circle-check fa-xl icon"
+                  style="margin: 15px"
+                ></i>
+                <div>
+                  <h3>Adobe Illustrator</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <i
+                  class="fa-solid fa-circle-check fa-xl icon"
+                  style="margin: 15px"
+                ></i>
+                <div>
+                  <h3>Adobe Photoshop</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <i
+                  class="fa-solid fa-circle-check fa-xl icon"
+                  style="margin: 15px"
+                ></i>
+                <div>
+                  <h3>Adobe Premiere Pro</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <i
+                  class="fa-solid fa-circle-check fa-xl icon"
+                  style="margin: 15px"
+                ></i>
+                <div>
+                  <h3>Blender</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <i
+        class="fa-solid fa-angles-down fa-2xl fa-flip icon arrow"
+        onclick="location.href='./#projects'"
+      ></i>
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="asset/untitled.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project One</h2>
+            <p>
+              Project pembuatan animasi kemasan produk mouse di software Blender
+            </p>
+            <br />
+            <p><b>February 2022</b></p>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="asset/Tugas1_WilbertLincoln_XMM3_DoubleExposure_V001.jpg"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Two</h2>
+            <p>
+              Project pembuatan double exposure penggabungan objek manusia dan
+              alam di software Adobe Photoshop
+            </p>
+            <br />
+            <p><b>April 2022</b></p>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="asset/Wilbert Lincoln_XI MM 3_Dual lighting effect 2.jpg"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Three</h2>
+            <p>
+              Project pembuatan dual lighting objek mobil pada software Adobe
+              Photoshop
+            </p>
+            <br />
+            <p><b>April 2022</b></p>
+          </div>
+        </div>
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="asset/Kemerdekaan.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Four</h2>
+            <p>
+              Project pembuatan poster kemerdekaan menggunakan software Adobe
+              Illustrator
+            </p>
+            <br />
+            <p><b>August 2022</b></p>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="asset/Hasil kerja PKL 1.jpg"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Five</h2>
+            <p>
+              Project pembuatan UI website e-commerce agraris Dogefarm di
+              PTSoBatamDotCom
+            </p>
+            <br />
+            <p><b>April 2023</b></p>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="asset/Wilbert Lincoln_XMM 3_PosterKesehatan.jpg"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Six</h2>
+            <p>
+              Project pembuatan poster kesehatan menggunakan Software Adobe
+              Illustrator
+            </p>
+            <br />
+            <p><b>January 2022</b></p>
+          </div>
+        </div>
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="asset/IMG_5272.JPG"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Seven</h2>
+            <p>Project fotografi produk speaker bluetooth</p>
+            <br />
+            <p><b>September 2023</b></p>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="asset/IMG_0867.JPG"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Eight</h2>
+            <p>Project fotografi kemasan dan produk mouse</p>
+            <br />
+            <p><b>October 2020</b></p>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="asset/IMG_5205.JPG"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Nine</h2>
+            <p>Project fotografi skincare</p>
+            <br />
+            <p><b>August 2023</b></p>
+          </div>
+        </div>
+        <!-- <div class="about-containers aboutp-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="asset/IMG_5272.JPG"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Ten</h2>
+            <p>Project fotografi produk speaker bluetooth</p>
+            <br />
+            <p><b>September 2023</b></p>
+          </div>
+        </div> -->
+      </div>
+      <i
+        class="fa-solid fa-angles-down fa-2xl fa-flip icon arrow"
+        onclick="location.href='./#contact'"
+      ></i>
+    </section>
+    <div>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+    </div>
+
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <i class="fa-regular fa-envelope icon contact-icon fa-xl"></i>
+          <p>
+            <a
+              href="mail.google.com/mailto:lincolnwilbert27@gmail.com"
+              target="_blank"
+              >lincolnwilbert27@gmail.com</a
+            >
+          </p>
+        </div>
+        <div class="contact-info-container">
+          <i class="fa-brands fa-instagram fa-xl icon contact-icon"></i>
+          <p>
+            <a
+              href="https://www.instagram.com/wilbert_are_lincoln/"
+              target="_blank"
+              >Instagram</a
+            >
+          </p>
+        </div>
+        <!-- <div class="contact-info-container">
+          <i class="fa-brands fa-youtube icon contact-icon fa-xl"></i>
+          <p>
+            <a href="https://www.youtube.com/channel/UC6GLj6X6n4KtpetxsnQW80w"
+              >Youtube</a
+            >
+          </p>
+        </div> -->
+        <div class="contact-info-container">
+          <i class="fa-brands fa-whatsapp icon contact-icon fa-xl"></i>
+          <p>
+            <a href="https://wa.me/6282391222473" target="_blank">Whatsapp</a>
+          </p>
+        </div>
+        <!-- <div class="contact-info-container">
+          <i class="fa-brands fa-github icon contact-icon fa-xl"></i>
+          <p>
+            <a href="https://github.com/Kingkin1102">Github</a>
+          </p>
+        </div> -->
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <p id="closing">
+        Copyright &copy; 2023 Wilbert Lincoln. All Rights Reserved.
+      </p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
